@@ -11,7 +11,7 @@ cordova plugin add https://github.com/Zaspire/ubuntu-plugin-pushnotications.git
 ```
 
 ### Example
-'''js
+```js
 document.addEventListener('deviceready', function() {
     ubuntu.pushNotification.watchNotifications(function(){
         ubuntu.pushNotification.getNotifications(function(o){
@@ -19,4 +19,4 @@ document.addEventListener('deviceready', function() {
         })
     })
 }, false);
-'''
+```
