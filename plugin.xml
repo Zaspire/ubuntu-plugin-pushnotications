@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+    id="com.ubuntu.push-notification"
+    version="1.1.2">
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+  <name>Ubuntu PushNotification</name>
+
+  <js-module src="pushNotification.js" name="pushNotification">
+    <clobbers target="ubuntu.pushNotification" />
+  </js-module>
+
+  <platform name="ubuntu">
+    <source-file src="src/ubuntu/push_notification.cpp" />
+    <header-file src="src/ubuntu/push_notification.h" />
+  </platform>
+</plugin>
